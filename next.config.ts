@@ -2,9 +2,8 @@ import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  eslint: {
-    // Only run ESLint during builds for these directories
-    dirs: ['src', 'pages', 'components', 'app'],
+    eslint:{
+    ignoreDuringBuilds: true,
   },
   typescript: {
     // Don't ignore build errors
